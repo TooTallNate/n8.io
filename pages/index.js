@@ -73,6 +73,7 @@ export default props => {
         }
 
         #icons :global(svg) {
+          fill: #ccc;
           vertical-align: top;
           width: 2em;
           padding: 0 0.5em;
@@ -93,7 +94,6 @@ export default props => {
         html, body {
           background-color: #161616;
           color: #ccc;
-          fill: #ccc;
           font-family: 'San Francisco';
         }
 
