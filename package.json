@@ -1,0 +1,29 @@
+{
+  "name": "n8.io",
+  "version": "4.0.0",
+  "description": "Nate's landing page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "deploy": "rm -rf out && next build && next export && now --name n8.io out/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TooTallNate/n8.io.git"
+  },
+  "author": "Nathan Rajlich <n@n8.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TooTallNate/n8.io/issues"
+  },
+  "homepage": "https://github.com/TooTallNate/n8.io#readme",
+  "dependencies": {
+    "gravatar": "^1.6.0",
+    "next": "^4.1.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "now": {
+    "alias": "n8.io"
+  }
+}
