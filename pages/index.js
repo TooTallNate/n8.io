@@ -19,7 +19,7 @@ export default props => {
           key="viewport"
         />
         <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
-        <link href="https://sf.n8.io/_.css" rel="stylesheet" />
+        <link href="https://sf.n8.io/?weight=100" rel="stylesheet" />
       </Head>
 
       <div id="content">
@@ -53,6 +53,10 @@ export default props => {
         h1, h2 {
           margin: 0;
           font-weight: normal;
+        }
+
+        h2 {
+          margin-top: 0.4em;
         }
 
         .name {
