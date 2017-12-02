@@ -27,10 +27,10 @@ export default props => {
         <h1 className="name">Nathan Rajlich</h1>
         <h2 className="handle">@TooTallNate</h2>
         <div id="icons">
-          <a href="https://github.com/TooTallNate"><GitHub /></a>
-          <a href="https://twitter.com/TooTallNate"><Twitter /></a>
-          <a href="https://www.linkedin.com/in/nathan-rajlich-aaa17233"><LinkedIn /></a>
-          <a href="https://instagram.com/TooTallNate"><Instagram /></a>
+          <a href="https://github.com/TooTallNate"><GitHub className="github" /></a>
+          <a href="https://twitter.com/TooTallNate"><Twitter className="twitter" /></a>
+          <a href="https://www.linkedin.com/in/nathan-rajlich-aaa17233"><LinkedIn className="linkedin" /></a>
+          <a href="https://instagram.com/TooTallNate"><Instagram className="instagram" /></a>
         </div>
       </div>
 
@@ -87,10 +87,28 @@ export default props => {
         }
 
         #icons :global(svg):hover {
-          fill: white;
           width: 2.5em;
           padding: 0 0.8em;
-          filter: drop-shadow(0 0 0.3em white);
+        }
+
+        #icons :global(.github):hover {
+          fill: #FFFFFF;
+          filter: drop-shadow(0 0 0.2em #FFFFFF);
+        }
+
+        #icons :global(.twitter):hover {
+          fill: #1DA1F2;
+          filter: drop-shadow(0 0 0.2em #1DA1F2);
+        }
+
+        #icons :global(.linkedin):hover {
+          fill: #0077B5;
+          filter: drop-shadow(0 0 0.2em #0077B5);
+        }
+
+        #icons :global(.instagram):hover {
+          fill: #E4405F;
+          filter: drop-shadow(0 0 0.2em #E4405F);
         }
       `}</style>
 
