@@ -4,7 +4,7 @@
   "description": "Nate's landing page",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "start": "next",
     "deploy": "rm -rf out && next build && next export && now --name n8.io out/"
   },
   "repository": {
