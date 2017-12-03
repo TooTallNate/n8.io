@@ -22,14 +22,22 @@ export default props => {
       </Head>
 
       <div id="content">
-        <img src={ picUrl } />
+        <img src={picUrl} />
         <h1 className="name">Nathan Rajlich</h1>
         <h2 className="handle">@TooTallNate</h2>
         <div id="icons">
-          <a href="https://github.com/TooTallNate"><GitHub className="github" /></a>
-          <a href="https://twitter.com/TooTallNate"><Twitter className="twitter" /></a>
-          <a href="https://www.linkedin.com/in/nathan-rajlich-aaa17233"><LinkedIn className="linkedin" /></a>
-          <a href="https://instagram.com/TooTallNate"><Instagram className="instagram" /></a>
+          <a href="https://github.com/TooTallNate">
+            <GitHub className="github" />
+          </a>
+          <a href="https://twitter.com/TooTallNate">
+            <Twitter className="twitter" />
+          </a>
+          <a href="https://www.linkedin.com/in/nathan-rajlich-aaa17233">
+            <LinkedIn className="linkedin" />
+          </a>
+          <a href="https://instagram.com/TooTallNate">
+            <Instagram className="instagram" />
+          </a>
         </div>
       </div>
 
@@ -49,7 +57,8 @@ export default props => {
           margin-bottom: 0.4em;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
           margin: 0;
           font-weight: normal;
         }
@@ -91,35 +100,40 @@ export default props => {
         }
 
         #icons :global(.github):hover {
-          fill: #FFFFFF;
-          filter: drop-shadow(0 0 0.2em #FFFFFF);
+          fill: #ffffff;
+          filter: drop-shadow(0 0 0.2em #ffffff);
         }
 
         #icons :global(.twitter):hover {
-          fill: #1DA1F2;
-          filter: drop-shadow(0 0 0.2em #1DA1F2);
+          fill: #1da1f2;
+          filter: drop-shadow(0 0 0.2em #1da1f2);
         }
 
         #icons :global(.linkedin):hover {
-          fill: #0077B5;
-          filter: drop-shadow(0 0 0.2em #0077B5);
+          fill: #0077b5;
+          filter: drop-shadow(0 0 0.2em #0077b5);
         }
 
         #icons :global(.instagram):hover {
-          fill: #E4405F;
-          filter: drop-shadow(0 0 0.2em #E4405F);
+          fill: #e4405f;
+          filter: drop-shadow(0 0 0.2em #e4405f);
         }
       `}</style>
 
       <style global jsx>{`
-        html, body {
+        html,
+        body {
           background-color: #161616;
           color: #ccc;
           font-family: 'San Francisco';
         }
 
         /* https://github.com/zeit/next.js/issues/822#issuecomment-328279284 */
-        html, body, body > div:first-child, #__next, #__next > div:first-child  {
+        html,
+        body,
+        body > div:first-child,
+        #__next,
+        #__next > div:first-child {
           width: 100%;
           height: 100%;
           margin: 0;
