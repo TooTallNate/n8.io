@@ -128,7 +128,7 @@ export default props => {
         body {
           background-color: #161616;
           color: #ccc;
-          font-family: 'San Francisco';
+          font-family: 'San Francisco', sans-serif;
         }
 
         /* https://github.com/zeit/next.js/issues/822#issuecomment-328279284 */
