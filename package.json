@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "next",
-    "deploy": "rm -rf out && next build && next export && now --name n8.io out/"
+    "build": "next build",
+    "export": "next export"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,5 @@
     "next": "^4.1.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
-  },
-  "now": {
-    "alias": "n8.io"
   }
 }
