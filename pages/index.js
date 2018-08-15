@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { url as gravatar } from 'gravatar';
 
+import NPM from '../components/icons/npm';
 import GitHub from '../components/icons/github';
 import Twitter from '../components/icons/twitter';
 import LinkedIn from '../components/icons/linkedin';
@@ -40,6 +41,9 @@ export default props => {
           </a>
           <a href="https://instagram.com/TooTallNate">
             <Instagram className="instagram" />
+          </a>
+          <a href="https://www.npmjs.com/~tootallnate">
+            <NPM className="npm" />
           </a>
         </div>
       </div>
@@ -92,6 +96,10 @@ export default props => {
           vertical-align: top;
           width: 2em;
           padding: 0 0.5em;
+        }
+
+        #icons :global(svg),
+        #icons :global(svg) :global(.colored) {
           filter: drop-shadow(0 0 0 white);
           transition-duration: 0.3s;
           transition-property: fill, filter, padding, width;
@@ -120,6 +128,22 @@ export default props => {
         #icons :global(.instagram):hover {
           fill: #e4405f;
           filter: drop-shadow(0 0 0.2em #e4405f);
+        }
+
+        #icons :global(.npm):hover {
+          filter: drop-shadow(0 0 0.2em #c12127);
+        }
+
+        #icons :global(.npm):hover :global(.outer) {
+          fill: #c12127;
+        }
+
+        #icons :global(.npm) :global(.inner) {
+          fill: transparent;
+        }
+
+        #icons :global(.npm):hover :global(.inner) {
+          fill: #fff;
         }
       `}</style>
 
