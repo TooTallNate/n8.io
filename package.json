@@ -4,7 +4,7 @@
   "description": "Nate's landing page",
   "main": "index.js",
   "scripts": {
-    "start": "next",
+    "dev": "next",
     "build": "next build",
     "export": "next export"
   },
