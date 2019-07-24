@@ -12,6 +12,9 @@
     "url": "https://github.com/TooTallNate/n8.io/issues"
   },
   "homepage": "https://github.com/TooTallNate/n8.io#readme",
+  "scripts": {
+    "build": "next build"
+  },
   "dependencies": {
     "gravatar": "^1.6.0",
     "next": "^9.0.2",
