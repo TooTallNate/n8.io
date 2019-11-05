@@ -39,7 +39,7 @@ export default props => {
           <a href="https://www.linkedin.com/in/nathan-rajlich-aaa17233">
             <LinkedIn className="linkedin" />
           </a>
-          <a href="https://instagram.com/TooTallNate">
+          <a href="https://instagram.com/nathanrajlich_">
             <Instagram className="instagram" />
           </a>
           <a href="https://www.npmjs.com/~tootallnate">
