@@ -11,9 +11,6 @@
   "bugs": {
     "url": "https://github.com/TooTallNate/n8.io/issues"
   },
-  "engines": {
-    "node": "12.x"
-  },
   "homepage": "https://github.com/TooTallNate/n8.io#readme",
   "scripts": {
     "build": "next build"
