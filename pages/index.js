@@ -4,6 +4,7 @@ import { url as gravatar } from 'gravatar';
 import NPM from '../components/icons/npm';
 import GitHub from '../components/icons/github';
 import Twitter from '../components/icons/twitter';
+import Bluesky from '../components/icons/bluesky';
 import LinkedIn from '../components/icons/linkedin';
 import Instagram from '../components/icons/instagram';
 
@@ -35,6 +36,9 @@ export default props => {
           </a>
           <a href="https://twitter.com/TooTallNate">
             <Twitter className="twitter" />
+          </a>
+          <a href="https://staging.bsky.app/profile/n8.io">
+            <Bluesky className="bluesky" />
           </a>
           <a href="https://www.linkedin.com/in/nathan-rajlich-aaa17233">
             <LinkedIn className="linkedin" />
@@ -102,7 +106,7 @@ export default props => {
         #icons :global(svg) :global(.colored) {
           filter: drop-shadow(0 0 0 white);
           transition-duration: 0.3s;
-          transition-property: fill, filter, padding, width;
+          transition-property: fill, filter, padding, width, opacity;
         }
 
         #icons :global(svg):hover {
@@ -143,6 +147,26 @@ export default props => {
         }
 
         #icons :global(.npm):hover :global(.inner) {
+          fill: #fff;
+        }
+
+        #icons :global(.bluesky):hover {
+          filter: drop-shadow(0 0 0.2em #0063ff);
+        }
+
+        #icons :global(.bluesky) :global(.outer) {
+          opacity: 0;
+        }
+
+        #icons :global(.bluesky):hover :global(.outer) {
+          opacity: 1;
+        }
+
+        #icons :global(.bluesky) :global(.inner) {
+          fill: transparent;
+        }
+
+        #icons :global(.bluesky):hover :global(.inner) {
           fill: #fff;
         }
       `}</style>
