@@ -2,8 +2,8 @@ export default (props) => (
   <svg viewBox="0 0 288 288" xmlns="http://www.w3.org/2000/svg" {...props}>
     <defs>
       <linearGradient id="MyGradient" gradientTransform="rotate(90)">
-        <stop offset="0%" stop-color="#0063ff" />
-        <stop offset="100%" stop-color="#0091fa" />
+        <stop offset="0%" stopColor="#0063ff" />
+        <stop offset="100%" stopColor="#0091fa" />
       </linearGradient>
     </defs>
     <path

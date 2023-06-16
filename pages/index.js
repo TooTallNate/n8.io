@@ -10,7 +10,7 @@ import Instagram from '../components/icons/instagram';
 
 const picUrl = gravatar('n@n8.io', { s: 500, protocol: 'https' });
 
-export default props => {
+export default (props) => {
   return (
     <div id="root">
       <Head>
@@ -20,9 +20,24 @@ export default props => {
           content="initial-scale=1.0, width=device-width, user-scalable=no"
           key="viewport"
         />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
-        <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="64x64"
+          href="/favicon-64x64.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="128x128"
+          href="/favicon-128x128.png"
+        />
         <link href="https://sf.n8.io/?weight=100" rel="stylesheet" />
       </Head>
 
@@ -174,7 +189,7 @@ export default props => {
       <style global jsx>{`
         html,
         body {
-          background-color: #161616;
+          background-image: url('/dark-noise.png');
           color: #ccc;
           font-family: 'San Francisco', sans-serif;
         }

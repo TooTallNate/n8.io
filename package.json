@@ -13,7 +13,8 @@
   },
   "homepage": "https://github.com/TooTallNate/n8.io#readme",
   "scripts": {
-    "build": "next build"
+    "build": "next build",
+    "dev": "next dev"
   },
   "dependencies": {
     "gravatar": "^1.6.0",
