@@ -52,7 +52,7 @@ export default (props) => {
           <a href="https://twitter.com/TooTallNate">
             <Twitter className="twitter" />
           </a>
-          <a href="https://staging.bsky.app/profile/n8.io">
+          <a href="https://bsky.app/profile/n8.io">
             <Bluesky className="bluesky" />
           </a>
           <a href="https://www.linkedin.com/in/nathan-rajlich-aaa17233">
