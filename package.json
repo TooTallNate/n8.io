@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/TooTallNate/n8.io#readme",
   "scripts": {
-    "build": "next build",
+    "build": "env | sort && next build",
     "dev": "next dev"
   },
   "dependencies": {
@@ -21,5 +21,6 @@
     "next": "^13.4.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "packageManager": "pnpm@9.1.0+sha1.217063ce3fcbf44f3051666f38b810f1ddefee4a"
 }
